@@ -2,11 +2,13 @@ plugins {
     id 'java'
 }
 
-group = 'devson'
-version = '1.0-SNAPSHOT'
+allprojects {
+    group = 'devson'
+    version = '1.0-SNAPSHOT'
 
-repositories {
-    mavenCentral()
+    repositories {
+        mavenCentral()
+    }
 }
 
 dependencies {
