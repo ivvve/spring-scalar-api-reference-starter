@@ -6,6 +6,9 @@ plugins {
     id 'org.jetbrains.kotlin.jvm'
 }
 
+bootJar.enabled=false
+jar.enabled=true
+
 dependencies {
     // Spring
     compileOnly "org.springframework.boot:spring-boot-autoconfigure"
