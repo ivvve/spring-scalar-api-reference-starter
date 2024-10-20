@@ -1,12 +1,10 @@
 rootProject.name = 'spring-scalar-api-reference-starter'
 
-def module(String name, String path) {
-    include(name)
-    project(name).projectDir = file(path)
-}
-
-include("")
 module(":spring-mvc-scalar-api-reference-starter", "spring-mvc-scalar-api-reference-starter")
 module(":example", "example")
 module(":spring-mvc-example", "example/spring-mvc-example")
 
+def module(String name, String path) {
+    include(name)
+    project(name).projectDir = file(path)
+}

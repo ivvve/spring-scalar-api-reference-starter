@@ -21,9 +21,8 @@ dependencies {
     // Spring
     compileOnly "org.springframework.boot:spring-boot-autoconfigure"
 
-
     // Spring MVC Open API
-    implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.6.0")
+    api("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.6.0")
 
     // Test
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
