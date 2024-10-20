@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: "Spring MVC Example for Spring MVC Scalar API Reference Starter"
+
+scalar-api-reference:
+  enabled: true

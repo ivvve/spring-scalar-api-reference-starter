@@ -1,0 +1,20 @@
+package devson.scalar.mvc;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.boot.autoconfigure.AutoConfiguration;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnWebApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
+
+@AutoConfiguration
+@ConditionalOnWebApplication(type = ConditionalOnWebApplication.Type.SERVLET)
+@EnableConfigurationProperties(MvcScalarApiReferenceProperties.class)
+@ConditionalOnProperty(name = "scalar-api-reference.enabled", havingValue = "true")
+public class MvcScalarApiReferenceAutoConfiguration {
+    private static Logger logger = LoggerFactory.getLogger(MvcScalarApiReferenceAutoConfiguration.class);
+
+    public MvcScalarApiReferenceAutoConfiguration() {
+        logger.info("Scalar API Reference is enabled");
+    }
+}
