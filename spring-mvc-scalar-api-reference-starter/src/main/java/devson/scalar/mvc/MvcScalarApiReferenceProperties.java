@@ -2,7 +2,6 @@ package devson.scalar.mvc;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-//@Component
 @ConfigurationProperties(prefix = "scalar-api-reference")
 public class MvcScalarApiReferenceProperties {
     private boolean enabled = true;
