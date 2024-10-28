@@ -4,3 +4,10 @@ spring:
 
 scalar-api-reference:
   enabled: true
+#  url: /api-spec # Add this property if you want to change the Scalar API Reference url. In this case, you should go to `/api-spec/index.html`
+
+springdoc:
+  api-docs:
+    enabled: true # If you disable this option, Scalar API Reference won't work
+  swagger-ui:
+    enabled: false
